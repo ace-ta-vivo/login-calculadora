@@ -1,0 +1,56 @@
+/* Container principal do formulário */
+form {
+    max-width: 350px; /* Limita a largura do formulário */
+    margin: 50px auto; /* Centraliza o formulário na página com margem superior */
+    padding: 30px; /* Espaçamento interno */
+    border: 1px solid #ddd; /* Borda suave */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidade */
+    background-color: #ffffff; /* Fundo branco */
+    font-family: Arial, sans-serif; /* Fonte legível */
+}
+
+/* Estilos para as labels */
+label {
+    display: block; /* Cada label em uma nova linha */
+    margin-bottom: 8px; /* Espaço abaixo da label */
+    font-weight: bold; /* Texto em negrito */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilos para os campos de input (email e senha) */
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 20px); /* Largura total menos o padding */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Espaço abaixo do input */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 4px; /* Cantos arredondados */
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Estilos para as quebras de linha (br) */
+/* Embora 'br' funcione, para layout mais complexo, flexbox/grid seriam melhores.
+   Por enquanto, podemos estilizar para garantir que não haja muito espaço extra. */
+br {
+    line-height: 1.5; /* Ajusta o espaçamento das quebras de linha */
+}
+
+/* Estilos para o botão de Entrar */
+button[type="submit"] {
+    width: 100%; /* Ocupa a largura total do formulário */
+    padding: 12px 20px; /* Espaçamento interno */
+    background-color: #007bff; /* Cor de fundo azul */
+    color: white; /* Cor do texto branco */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Cantos levemente arredondados */
+    cursor: pointer; /* Indica que é clicável */
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    transition: background-color 0.3s ease; /* Transição suave na mudança de cor */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Cor mais escura ao passar o mouse */
+}
